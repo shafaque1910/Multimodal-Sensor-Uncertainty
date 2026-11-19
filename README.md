@@ -1,7 +1,7 @@
 # Multimodal Sensor Uncertainty Under Progressive Sensor Degradation
 
 Compact handover of the final paper code and saved evidence for the multimodal
-RADIATE detector study. The manuscript is included as IEEE Paper.pdf.
+RADIATE detector study
 
 ## Contents
 
