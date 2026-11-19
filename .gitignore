@@ -11,7 +11,7 @@ tiny_foggy/
 
 # Local work and generated runs
 archive/
-archive_client_handoff_phase_cleanup/
+archive*/
 delivery/
 docs/
 notebooks/
