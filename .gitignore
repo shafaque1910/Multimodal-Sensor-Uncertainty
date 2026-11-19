@@ -1,0 +1,36 @@
+# External RADIATE sequences and other large local inputs
+city_3_0/
+fog_6_0/
+fog_8_0/
+tiny_foggy/
+*.pth
+*.ckpt
+*.zip
+*.tar
+*.gz
+
+# Local work and generated runs
+archive/
+archive_client_handoff_phase_cleanup/
+delivery/
+docs/
+notebooks/
+outputs/reproduced/
+outputs/calibration_benchmark/
+outputs/test/
+outputs/smoke_test/
+outputs/audit/
+outputs/full_data_audit/
+.pytest_cache/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.env
+
+# Editor and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

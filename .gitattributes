@@ -1,0 +1,2 @@
+# Preserve the exact bytes covered by the deterministic-source SHA-256.
+outputs/provenance/deterministic_source.json -text

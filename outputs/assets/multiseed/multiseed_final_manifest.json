@@ -1,0 +1,47 @@
+{
+    "status": "FINAL_MULTI_SEED_PAPER_READY",
+    "controlled_stochastic_realizations": 3,
+    "run_seeds": [
+        12345,
+        23456,
+        34567
+    ],
+    "frame_seed_strategy": "NumPy SeedSequence([run_seed, frame_index])",
+    "checkpoint_frozen": true,
+    "training_repeated": false,
+    "deterministic_conditions": [
+        "C0",
+        "C1",
+        "C2a"
+    ],
+    "multiseed_conditions": [
+        "C2",
+        "C3",
+        "C4",
+        "C5"
+    ],
+    "c4_l3_pairwise_branch_ablation_multiseed": true,
+    "real_fog_evaluation": "unchanged held-out deterministic external evaluation",
+    "authoritative_outputs": {
+        "controlled": "outputs/assets/multiseed/controlled_conditions_multiseed_assets.csv",
+        "branch": "outputs/assets/multiseed/c4_l3_branch_multiseed_assets.csv",
+        "table_1": "outputs/assets/tables/table1_controlled_severe.csv",
+        "table_2": "outputs/assets/tables/table2_real_fog.csv",
+        "table_3": "outputs/assets/tables/table3_branch_ablation.csv",
+        "figure_1": "outputs/assets/figures/fig1_map_vs_severity.pdf",
+        "figure_2": "outputs/assets/figures/fig2_ece_vs_severity.pdf",
+        "figure_3": "outputs/assets/figures/fig3_branch_ablation_common_class.pdf"
+    },
+    "aggregation_script": "scripts/reproduce_results.py",
+    "verification_command": "python scripts/reproduce_results.py --check",
+    "evidence_sources": {
+        "controlled": "outputs/multiseed_controlled_framewise/controlled_multiseed_framewise_raw.json",
+        "pairwise": "outputs/multiseed_branch_ablation_framewise/c4_l3_pairwise_multiseed_raw.json",
+        "deterministic": "outputs/deterministic_reference/controlled_deterministic.json",
+        "clean_branches": "outputs/branch_ablation/clean_pairwise_branch_ablation_corrected.json",
+        "fog_branches": "outputs/branch_ablation/real_fog_pairwise_branch_ablation_corrected.json",
+        "fog": "outputs/real_fog_external/fog_6_0_external_results.json"
+    },
+    "reproduction_scope": "Regeneration from saved run-level evaluations. Full neural inference replay requires external data, checkpoint, original runtime, and the original execution driver.",
+    "historical_archive": "archive/pre_multiseed/manifest.json"
+}
